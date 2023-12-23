@@ -1,0 +1,56 @@
+
+dataset:
+    caltech256:
+        label_path: /home/lijianing/AL/pytorch-cifar/data/caltech256/L.txt
+        unlabel_path: /home/lijianing/AL/pytorch-cifar/data/caltech256/U.txt
+        all_path: /home/lijianing/AL/pytorch-cifar/data/caltech256/labels.txt
+        test_path: /home/lijianing/AL/pytorch-cifar/data/caltech256/test.txt
+        tensor_path: /home/lijianing/AL/pytorch-cifar/data/caltech256/embedding
+        
+    caltech101:
+        label_path: /home/lijianing/AL/pytorch-cifar/data/caltech101/L.txt
+        unlabel_path: /home/lijianing/AL/pytorch-cifar/data/caltech101/U.txt
+        all_path: /home/lijianing/AL/pytorch-cifar/data/caltech101/labels.txt
+        test_path: /home/lijianing/AL/pytorch-cifar/data/caltech101/test.txt
+        tensor_path: /home/lijianing/AL/pytorch-cifar/data/caltech101/embedding
+        
+    cifar10:
+        label_path: /home/lijianing/AL/pytorch-cifar/data/cifar/L.txt
+        unlabel_path: /home/lijianing/AL/pytorch-cifar/data/cifar/U.txt
+        all_path: /home/lijianing/AL/pytorch-cifar/data/cifar/A.txt
+        test_path: /home/lijianing/AL/pytorch-cifar/data/cifar/test.txt
+        tensor_path: /home/lijianing/AL/pytorch-cifar/data/cifar/embedding
+        
+    cifar100:
+        label_path: /home/lijianing/AL/pytorch-cifar/data/cifar100/L.txt
+        unlabel_path: /home/lijianing/AL/pytorch-cifar/data/cifar100/U.txt
+        all_path: /home/lijianing/AL/pytorch-cifar/data/cifar100/A.txt
+        test_path: /home/lijianing/AL/pytorch-cifar/data/cifar100/test.txt
+        tensor_path: /home/lijianing/AL/pytorch-cifar/data/cifar100/embedding
+        
+
+model:
+    caltech256:
+        weight_dir:
+            vgg16: /home/lijianing/AL/pytorch-cifar/checkpoint/ckpt.pth
+            resnet34: /home/lijianing/AL/pytorch-cifar/checkpoint/res256ckpt.pth
+    
+    
+    caltech101:
+        weight_dir:
+            vgg16:
+            resnet34: /home/lijianing/AL/pytorch-cifar/checkpoint/res101ckpt.pth
+    
+    cifar10:
+        weight_dir:
+            vgg16: /home/lijianing/AL/pytorch-cifar/checkpoint/10ckpt.pth
+            resnet34: /home/lijianing/AL/pytorch-cifar/checkpoint/10ckpt.pth
+    cifar100:
+        weight_dir:
+            vgg16:
+            resnet34: /home/lijianing/AL/pytorch-cifar/checkpoint/res100ckpt.pth
+    
+
+    
+
+
